@@ -58,3 +58,31 @@ You can view the detailed usage guide through the following links:
 | 张三 | 整理详细需求文档 | 2024年1月18日 | ✅ **完成** |
 | 李四 | 评估技术方案并提供开发计划 | 2024年1月20日 | ⭐⭐待完成 |
 | 王五 | 提供完整设计稿 | 2024年1月22日 | 待完成 |
+
+
+```mermaid
+pie title 网站流量来源
+    "搜索引擎" : 42.5
+    "直接访问" : 28.3
+    "社交媒体" : 15.7
+    "邮件营销" : 8.9
+    "其他" : 4.6
+```
+
+```mermaid
+sequenceDiagram
+    A->>B: 请求数据
+    
+    Note over A,B: 这是一个注释
+    
+    loop 每5秒
+        B->>C: 检查状态
+        C-->>B: 返回状态
+    end
+    
+    alt 成功
+        B-->>A: 返回数据
+    else 失败
+        B-->>A: 返回错误
+    end
+```
